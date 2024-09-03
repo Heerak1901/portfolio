@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heerak Trivedi Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+#home {
+            background-image: url('Images/4884841.jpg'); /* Path to your background image */
+            background-size: cover; /* Ensures the image covers the entire section */
+            background-position: center; /* Centers the background image */
+            background-repeat: no-repeat; /* Prevents repeating the background image */
+            color: #ffffff8a; /* White text color for contrast */
+            padding: 5rem 0; /* Padding for top and bottom spacing */
+        }
+        
+        .navbar-brand {
+            font-family: 'Roboto', sans-serif; /* Stylish font for the brand */
+            font-size: 1.8rem; /* Larger font size for the brand name */
+            color: #f8f9fa !important; /* Light color for the brand text */
+        }
+        .nav-link {
+            font-family: 'Roboto', sans-serif; /* Stylish font for links */
+            font-size: 1.1rem; /* Slightly larger font size for links */
+            color: #f8f9fa !important; /* Light color for the links */
+            margin-left: 1rem; /* Spacing between links */
+        }
+        .nav-link:hover {
+            color: #00bcd4 !important; /* Color change on hover for better visibility */
+            text-decoration: underline; /* Underline effect on hover */
+        }
+        .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23f8f9fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Cline x1="3" y1="12" x2="21" y2="12"/%3E%3Cline x1="3" y1="6" x2="21" y2="6"/%3E%3Cline x1="3" y1="18" x2="21" y2="18"/%3E%3C/svg%3E'); /* Custom toggler icon color */
+        }
+
+        .navbar {
+    background-color: #343a40; /* Dark background color */
+    padding: 1rem 2rem; /* Increased padding for a broader look */
+    position: fixed; /* Fixes the header to the top */
+    width: 100%; /* Ensure the header spans the full width */
+    top: 0; /* Position at the top */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Add padding to the body to prevent content from hiding behind the fixed header */
+body {
+    background-color: beige;
+    padding-top: 4.5rem; /* Adjust this value based on your header height */
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}   
+
+
+        <!--About section css-->
+        #about {
+    font-family: 'Roboto', sans-serif; /* Professional and clean font */
+    font-weight: 700; /* Makes the font bolder */
+    font-size: 1.2rem; /* Adjust size for emphasis */
+    letter-spacing: 0.5px; /* Slightly increase letter spacing for readability */
+    text-transform: uppercase; /* Transform text to uppercase for a strong impression */
+    color: #333; /* Dark color for readability */
+    margin: 2rem 0; /* Add some spacing around the section */
+    padding: 1rem; /* Add padding inside the section */
+}
+
+#skills h2 {
+
+    text-align: left;
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Additional styling for section headings */
+#about h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800; /* Even bolder for headings */
+    font-size: 2rem; /* Larger size for headings */
+    color: #222; /* Slightly darker color for headings */
+    margin-bottom: 1rem; /* Space below the heading */
+    text-decoration: underline;
+}
+        #about p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1rem;
+            color: #495057;
+            margin-bottom: 1.5rem;
+        }
+        .education-section ,.skills-section{
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education-section h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #000000;
+    font-weight: 700; /* Bold */
+    text-decoration: underline;
+}
+
+.journey-container {
+    position: relative;
+}
+
+.journey-path {
+    position: relative;
+    padding-left: 2rem;
+    margin-left: 2rem;
+}
+
+.journey-path::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    height: 100%;
+    width: 2px;
+    background-color: #000000;
+}
+
+.journey-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+
+
+        .edu-logo {
+        width: 250px;
+        height: 60px;
+        object-fit: relative;
+        margin-right: 1rem;
+        position: relative; /* Allows for precise positioning within the parent */
+    }
+    .edu-logo1 {
+        width: 100px;
+        height: 80px;
+        object-fit: relative;
+        margin-right: 1rem;
+        position: relative; /* Allows for precise positioning within the parent */
+    }
+    .journey-content {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.journey-content p {
+    margin: 0;
+    color: #343a40;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+        .skills-section .skill-logo {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-logo1 {
+            width: 90px;
+            height: 70px;
+            margin-bottom: 0.5rem;
+        }
+        .skills-section p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            color: #343a40;
+        }
+
+
+
+        <!--Expereince Section CSS-->
+        #experience {
+    background-color: #00274d; /* Dark blue background */
+    padding: 20px;
+    border-radius: 10px;
+    color:#000000; /* White text color */
+}
+
+#experience h3 {
+    text-align: left;
+    
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#training h3{
+    text-align: left;
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.experience-item {
+    
+    display: flex;
+    align-items: center;
+}
+
+.experience-logo {
+    width: 100px; /* Adjust the logo size */
+    height: auto;
+    margin-right: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.experience-content {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.experience-content p {
+    margin: 5px 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.experience-content strong {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.experience-content p:first-child {
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+
+<!--Certification and Project-->
+/* Certifications Section */
+#certifications {
+    background-color: #00274d; /* Dark blue background */
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffff; /* White text color */
+}
+
+#certifications h3 {
+    text-align: left;
+    color: black;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.certification-item {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.certification-logo {
+    width: 100px; /* Adjust the logo size */
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.certification-content {
+    flex-grow: 1;
+    color: #ffffff; /* White text */
+}
+
+.certification-content p {
+    margin: 5px 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.certification-content strong {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.certification-content p:first-child {
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+/* Training */
+
+/* Projects Section */
+#projects {
+    
+    padding: 20px;
+    border-radius: 10px;
+    color: black /* White text color */
+}
+
+#projects h3 {
+    text-align: left;
+    color: black;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.project-item {
+    display: flex;
+    align-items: center;
+    background-color: #00274d;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.project-logo {
+    width: 500px; /* Adjust the logo size */
+    height: 250px;
+    margin-right: 20px;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.projectMilling-logo {
+    width: 170px; /* Adjust the logo size */
+    height: 320px;
+    margin-right: 20px;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-content {
+    flex-grow: 1;
+    color: #ffffff; /* White text */
+}
+
+.project-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+}
+
+.project-content p {
+    margin: 5px 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.project-content p:first-child {
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+#contact h2 {
+    text-align: left;
+    color: black;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+        
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#certifications">Certifications</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#training">Training</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="container-fluid bg-primary text-white text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 my-auto">
+                    <h1>Hello, I'm Heerak Trivedi</h1>
+                    <p>Fueling innovation from the backend, where the magic happens.</p>
+                    <a href="Resume/TCS_Resume01.pdf" class="btn btn-light">Download Resume</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="Images/photo_2024-09-01_11-24-29.jpg" alt="Heerak Trivedi" class="img-fluid rounded-circle">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="container mt-5">
+        <h2>About Me</h2>
+        <p>Hi, I’m Heerak Trivedi, a passionate Java developer with a deep love for technology. Currently pursuing a Bachelor of Technology(B.Tech) in Information Technology Engineering, I specialize in Java development and am enthusiastic about leveraging frameworks to build robust and scalable applications.</p>
+        <p>My expertise spans a range of technologies, including popular frameworks like Spring Boot and Hibernate. I thrive on solving complex challenges, optimizing code, and delivering impactful solutions. I’m dedicated to staying at the forefront of technological advancements and am driven by a constant curiosity to explore new tools and methodologies.</p>
+        <p>With a focus on creating seamless user experiences and efficient back-end solutions, I am committed to harnessing technology to drive innovation and enhance functionality.</p>
+
+        <!-- Education -->
+        <div class="education-section">
+            <h3>Education</h3>
+            <div class="journey-container">
+                <div class="journey-path" >
+                    <div class="journey-item" >
+                        <img src="Images/medi-logo" alt="Medicaps University" class="edu-logo1">
+                        <div class="journey-content">
+                            <p><strong>Medicaps University</strong><br>Bachelor of Technology - BTech, Information Technology<br>2021 - 2025<br>Grade: CGPA - 8.81<br>Activities and societies: Student Placement Coordinator (SPC)</p>
+                        </div>
+                    </div>
+                    <div class="journey-item">
+                        <img src="Images/st-paul-logo.png" alt="St. Paul's Convent Sr. Sec. School" class="edu-logo1">
+                        <div class="journey-content">
+                            <p><strong>St. Paul's Convent Sr. Sec. School, Ujjain</strong><br>High School | PCM<br>2021<br>Grade: 92.4%</p>
+                        </div>
+                    </div>
+                    <div class="journey-item">
+                        <img src="Images/st-paul-logo.png" alt="St. Paul's Convent Sr. Sec. School" class="edu-logo1">
+                        <div class="journey-content">
+                            <p><strong>St. Paul's Convent Sr. Sec. School, Ujjain</strong><br>Secondary School<br>2019<br>Grade: 87.8%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div id="skils" class="skills-section mt-4">
+            <h2>Skills</h2>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <img src="images/java.png" alt="Java" class="skill-logo">
+                    <p>Java</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="images/spring-boot-logo.png" alt="Java Spring" class="skill-logo1">
+                    <p>Java Spring</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="images/html-logo.png" alt="HTML" class="skill-logo">
+                    <p>HTML</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="images/css-logo.png" alt="CSS" class="skill-logo">
+                    <p>CSS</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="images/aws-logo.png" alt="AWS" class="skill-logo1">
+                    <p>AWS</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="images/mySql-logo.png" alt="MySQL" class="skill-logo1">
+                    <p>MySql Database</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internships Section -->
+    <section id="experience" class="container mt-5">
+        
+        <h3>Experience</h3>
+        <br>
+    
+        <div class="experience-item">
+            <img src="Images/mii-logo.jpeg" alt="MII Foundation" class="experience-logo">
+            <div class="experience-content">
+                <p><strong>Back-End Developer</strong><br>Organization: MII Foundation || Post: Intern <br>Duration: July 2024 - August 2024<br>Location: Indore, Madhya Pradesh, India · On-site</p>
+                <p>As a Software Developer Intern at MII Foundation, I am actively contributing to the architecture and enhancement of a live Employment Recruitment platform for Medicaps University's official website. I leverage cutting-edge technologies like Spring Boot, JSP, and MySQL to optimize backend functionality, ensuring a seamless user experience.</p>
+                <p>Skills: Spring Boot | Website Development | Back-End Web Development | MySQL | Java</p>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Certifications Section -->
+    <!-- Certifications Section -->
+<section id="certifications" class="container mt-5">
+    <h3>Certifications</h3>
+    <br>
+    
+    <div class="experience-item">
+        <img src="images/aws-logo2.jpg" alt="AWS" class="certification-logo">
+        <div class="experience-content">
+            <p><strong>AWS Academy Cloud Architecture</strong><br>Issued Jul 2024<br>Skills: Amazon Web Services (AWS) | Cloud Computing | AWS Lambda | AWS CloudFormation | AWS Identity and Access Management (AWS IAM)</p>
+            <a href="https://www.credly.com/badges/321d3196-5d75-44b8-941e-e9cd72e27306/public_url" class="btn btn-light">Credential</a>
+        </div>
+    </div>
+    <div class="experience-item">
+        <img src="images/aws-logo2.jpg" alt="AWS" class="certification-logo">
+        <div class="experience-content">
+            <p><strong>AWS Academy Cloud Foundations</strong><br>Issued Jul 2024<br>Skills: Amazon Web Services (AWS) | AWS Lambda | AWS Identity and Access Management (AWS IAM)</p>
+            <a href="https://www.credly.com/badges/35ff4197-5cd7-4305-94f9-13ce4ac3f9a6/public_url" class="btn btn-light">Credential</a>
+        </div>
+    </div>
+    <div class="experience-item">
+        <img src="Images/nptel-logo.jpeg" alt="NPTEL" class="certification-logo">
+        <div class="experience-content">
+            <p><strong>NPTEL Online Certification</strong><br>Issued Oct 2023<br>Credential ID: NPTEL23CS127S549400035<br>Skills: Cyber Secrity Management</p>
+            <a href="https://archive.nptel.ac.in/content/noc/NOC23/SEM2/Ecertificates/106/noc23-cs127/Course/NPTEL23CS127S54940003520186064.pdf" class="btn btn-light">Credentials</a>
+        </div>
+    </div>
+</section>
+
+ <!-- Training Section -->
+ <section id="training" class="container mt-5">
+    <h3>Training</h3>
+    <br>
+    
+    <div class="experience-item">
+        <img src="Images/technosoft-logo.png" alt="CoreJava" class="certification-logo">
+        <div class="experience-content">
+            <p><strong>Core Java</strong><br>Mentor: Mr. Rahul Jain (CEO: @Technosoft Informatics)<br>Issued Aug 2023<br>Skills: Core java | Data Structure</p>
+            <a href="Resume/training techo.pdf" class="btn btn-light">Certificate</a>
+        </div>
+    </div>
+    <div class="experience-item">
+        <img src="Images/technosoft-logo.png" alt="Advance Java" class="certification-logo">
+        <div class="experience-content">
+            <p><strong>Advance Java / Project Making</strong><br>Mentor: Mr. Rahul Jain (CEO: @Technosoft Informatics) <br>Issued Oct 2023<br>Skills: JSP | Cookies | Sessions | Servlet</p>
+            <a href="Resume/training techo.pdf" class="btn btn-light">Certificate</a>
+        </div>
+    </div>
+    
+</section>
+
+
+    <!-- Projects Section -->
+    <!-- Projects Section -->
+<section id="projects" class="container mt-5">
+    <h3>Projects</h3>
+    <br>
+    <div class="experience-item">
+        <img src="Images/medicaps-recruitment.png" alt="Medi-caps University Employee Recruitment" class="project-logo">
+        <div class="experience-content">
+            <p><strong>Medi-caps University Employee Recruitment</strong></p>
+            <p>July’24 - Aug’24</p>
+            <p>The Employment Recruitment is a live project developed for Medi-caps University which aims to streamline and enhance the recruitment process for job seekers and employers.</p>
+            <p>Tech Used: Spring Boot, Hibernate, MySQL Database, HTML, CSS, JavaScript</p>
+        </div>
+    </div>
+    <div class="experience-item">
+        <img src="Images/millingSS.png" alt="Millings & Commodities" class="projectMilling-logo">
+        <div class="experience-content">
+            <p><strong> Millings & Commodities</strong></p>
+            <p>March’24 - April’24</p>
+            <p>This is an Android-based application based on request-response based working which picks up the raw cereals and delivers the milled cereals.</p>
+            <p>Tech Used: Android Development, SDK, XML, Firebase & Firestore Database</p>
+        </div>
+    </div>
+    <div class="experience-item">
+        <img src="Images/WhatsApp Image 2024-09-02 at 09.54.02.jpeg" alt="CharityON" class="project-logo">
+        <div class="experience-content">
+            <p><strong>CharityON</strong></p>
+            <p>July’23 – Aug’23</p>
+            <p>Developed a web-based platform focused on aiding street beggars, handicapped children, and adults.</p>
+            <p>Tech Used: Advanced Java, JSP, Servlet, SQLyog Database, HTML, DHTML</p>
+        </div>
+    </div>
+    <div class="experience-item">
+        <img src="Images/Screenshot (281).png" alt="Portfolio Website" class="project-logo">
+        <div class="experience-content">
+            <p><strong>Personal Portfolio Website</strong></p>
+            <p>Aug’24 – Sep'24</p>
+            <p>Developed a fully responsive personal portfolio website showcasing internships, certifications, projects, and contact information.</p>
+            <p>Tech Used: HTML, CSS, Bootstrap</p>
+        </div>
+    </div>
+    
+
+</section>
+
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="container mt-5">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me through any of the following channels:</p>
+        <p>Heerak Trivedi<br><a href="mailto:heeraktrivedi19@gmail.com">heeraktrivedi19@gmail.com</a><br><a href="tel:+918435697677">8435697677</a></p>
+        <p><a href="https://github.com/Heerak1901">GitHub</a> | <a href="https://www.linkedin.com/in/heerak-trivedi-729984233/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></p>
+
+        <form action="mailto:heeraktrivedi19@gmail.com" method="POST" enctype="text/plain">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Your message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+    <br>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Heerak Trivedi. All rights reserved.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

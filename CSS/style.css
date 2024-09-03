@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#home {
+    padding: 100px 0;
+}
+
+#about h2, #experience h2, #certifications h2, #projects h2, #contact h2 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.edu-logo, .skill-logo, .internship-logo, .certification-logo, .project-img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.education-item, .experience-item, .certification-item, .project-item {
+    margin-bottom: 30px;
+}
+
+.certification-item:hover,
+.project-item:hover,
+.experience-item:hover {
+    background-color: #ffffff; /* Slightly different shade on hover */
+    transition: background-color 0.3s ease;
+}
+
+.certification-logo:hover,
+.project-logo:hover,
+.projectMilling-logo:hover,
+.experience-logo:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+.footer {
+    margin-top: 50px;
+}
