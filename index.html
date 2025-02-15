@@ -379,7 +379,49 @@ html {
     font-weight: bold;
     text-decoration: underline;
 }
-
+@media (max-width: 768px) {
+            /* Stack flex items vertically */
+            .experience-item,
+            .certification-item,
+            .project-item,
+            .journey-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            /* Remove extra side margins */
+            .experience-logo,
+            .certification-logo,
+            .project-logo,
+            .projectMilling-logo,
+            .edu-logo,
+            .edu-logo1,
+            .skill-logo,
+            .skill-logo1 {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            /* Scale project images */
+            .project-logo,
+            .projectMilling-logo {
+                width: 100% !important;
+                height: auto !important;
+            }
+            /* Adjust education logos */
+            .edu-logo {
+                width: 150px !important;
+                height: auto !important;
+            }
+            .edu-logo1 {
+                width: 80px !important;
+                height: auto !important;
+            }
+            /* Adjust skill logos */
+            .skill-logo,
+            .skill-logo1 {
+                width: 50px !important;
+                height: auto !important;
+            }
+        }
 
         
     </style>
